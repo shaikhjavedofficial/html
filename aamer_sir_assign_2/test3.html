@@ -4,6 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function setFullName(){
+            var fname = document.getElementById("fname");
+            var lname = document.getElementById("lname");
+            var fullname = document.getElementById("fullname");
+            fullname.value = fname.value + " " + lname.value;
+        }
+    </script>
 </head>
 <body>
     <h1>
@@ -15,19 +23,18 @@
     </h4>
     <br> <br>
     <label> First Name :</label>
-    <input type="text">
-    <br>
+    <input type="text" id = "fname">
     <br>
     <br>
     <label> Last Name :</label>
-    <input type="text">
-    <button> Full Name </button>
+    <input type="text" id = "lname">
+    <button onclick="setFullName()"> Full Name </button>
     <br>
     <br>
     <br>
     <br>
     
     <label> Full Name :</label>
-    <input type="text">
+    <input type="text" id = "fullname">
 </body>
 </html>
