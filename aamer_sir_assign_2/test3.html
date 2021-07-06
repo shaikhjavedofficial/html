@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function setFullName(){
+        function setFullName (){
             var fname = document.getElementById("fname");
             var lname = document.getElementById("lname");
             var fullname = document.getElementById("fullname");
-            fullname.value = fname.value + " " + lname.value;
+            var mname = document.getElementById("mname");
+            fullname.value = fname.value + " " + mname.value + " " + lname.value;
         }
     </script>
 </head>
 <body>
     <h1>
-        Employee Detials
+        Employee Details
     </h1>
     <hr>
-    <h4>
-        Personal Info
-    </h4>
-    <br> <br>
-    <label> First Name :</label>
-    <input type="text" id = "fname">
+    <h2>
+        personal info
+    </h2>
+    <label>First Name :</label>
+    <input type="text" id="fname">
     <br>
     <br>
-    <label> Last Name :</label>
-    <input type="text" id = "lname">
-    <button onclick="setFullName()"> Full Name </button>
+    <label>Last Name :</label>
+    <input type="text" id="lname">
     <br>
     <br>
+    <label>Middle Name :</label>
+    <input type="text" id="mname">
+    <button onmouseover="setFullName()">Full Name</button>
     <br>
     <br>
-    
-    <label> Full Name :</label>
-    <input type="text" id = "fullname">
+    <label>Full Name :</label>
+    <input type="text" id="fullname">
+
 </body>
 </html>

@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setFullName() {
+            var fname = document.getElementById("fname");
+            var lname = document.getElementById("lname");
+            var mname = document.getElementById("mname");
+            var fullname = document.getElementById("fullname");
+            fullname.value = fname.value + " " + mname.value + " " + lname.value;
+
+        }
+
+        function clrsme() {
+            var clrfullname = document.getElementById("fullname");
+            clrfullname.value = " ";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        <i><b><span style="color: navy;">Employee Details</span></b></i>
+    </h1>
+    <hr>
+    <h2>
+        <i><b><span style="color: sandybrown;">Personal Info</span>
+    </h2>
+    <label><span style="color: green;">First Name :</span></label>
+    <input type="text" placeholder="Enter Your First Name" id="fname">
+    <br>
+    <br>
+    <label><span style="color: green;">Middle Name :</span></label>
+    <input type="text" placeholder="Enter Your Middle Name" id="mname">
+    <br>
+    <br>
+    <label><span style="color: green;">Last Name :</span></label>
+    <input type="text" placeholder="Enter Your Last Name" id="lname">
+    <br>
+    <br>
+    <label><span style="color: green;">Full Name :</span></label>
+    <input type="text" placeholder="yaha mat likho" id="fullname">
+    <br>
+    <br>
+    <button onclick="setFullName()"><b><span style="color: red;">Click Me</span></b></button>
+    <br>
+    <button onclick="clrsme()"><b><span style="color: red;">Clear</span></b></button>
+</body>
+
+</html>
