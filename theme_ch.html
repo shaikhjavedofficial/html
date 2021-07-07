@@ -6,14 +6,29 @@
     <title>Document</title>
 </head>
 <script>
-    function theme_1(){
-        
+    function setTheme_1(){
+        var theme_1 = document.getElementById("pickup");
+        var theme_2 = document.getElementById("biz")
+        theme_1.style ="color: red;";
+        theme_2.style ="color: blue;";
+    }
+    function setTheme_2(){
+        var theme_1 = document.getElementById("pickup");
+        var theme_2 = document.getElementById("biz")
+        theme_1.style ="color: blue;";
+        theme_2.style ="color: yellow;";
+    }
+    function setTheme_3(){
+        var theme_1 = document.getElementById("pickup");
+        var theme_2 = document.getElementById("biz")
+        theme_1.style ="color: black;";
+        theme_2.style ="color: green;";
     }
 </script>
 <body>
-    <h1><span style= >Pickup</span><span style= >Bib</span></h1>
-    <button onclick="theme_1()">Them1</button>
-    <button onclick="theme_2()">Them2</button>
-    <button onclick="theme_3()">Them3</button>
+    <h1><span style="color: navy;" id="pickup">Pickup</span><span style="color:orangered;" id="biz" >Biz</span></h1>
+    <button style="color: navy;" onclick="setTheme_1()"><b> Theme 1 </b></button>
+    <button style="color: navy;" onclick="setTheme_2()"><b> Theme 2 </b></button>
+    <button style="color: navy;" onclick="setTheme_3()"><b> Theme 3 </b></button>
 </body>
 </html>
