@@ -4,6 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      function setclrme(id){
+        
+      }
+      function setSubmit(id){
+        
+      }
+    </script>
+    <style>
+      body {background-color:darkblue;
+      width: 400px;
+      padding: 100px;
+      margin: 10px;}
+      h1   {color: burlywood;}
+      label    {color: burlywood;}
+      button    {color: dodgerblue;}
+    </style>
   </head>
   <body>
     <h1>
@@ -11,25 +28,40 @@
     </h1>
     <hr />
     <form>
-      <label>Name :</label>
-      <input type="text" placeholder="Enter Your Full Name" />
+      <label>Name :</label><br>
+      <input type="text" placeholder="Enter Your Full Name"  id="1"/>
       <br>
       <br>
-      <label>DoB</label>
-      <input type="date" placeholder="Enter Date Of Birth">
+      <label>Email :</label><br>
+      <input type="email" placeholder="Enter Your Email" id="2" >
       <br>
       <br>
-      <label>Email</label>
-      <input type="email" placeholder="Enter Your Email">
+      <label>Password :</label><br>
+      <input type="password" placeholder="Enter Your Password" id="3">
       <br>
       <br>
-      <label>Password</label>
-      <input type="password" placeholder="Enter Your Password">
+      <label>DoB :</label><br>
+      <input type="date" placeholder="Enter Date Of Birth" id="4">
       <br>
       <br>
-      <label>Gender</label>
-      <input type="radio" name="gender" value="male"> Male
-      <input type="radio" name="gender" value="female"> Female
+      <label>CV :</label><br>
+      <input type="file" placeholder="upload Your CV" id="5">
+      <br>
+      <br>
+      <label>Gender :</label>
+      <input type="radio" name="gender" value="male" id="6"> <span style="color: burlywood;">Male</span>
+      <input type="radio" name="gender" id="7" value="female"> <span style="color: burlywood;">Female</span>
+      <br>
+      <br>
+      <label>Hobbies :</label>
+      <input type="checkbox" name="coding" id="8"><span style="color: burlywood;">Coding</span>
+      <input type="checkbox" name="riding" id="9"><span style="color: burlywood;">Riding</span>
+      <input type="checkbox" name="pg" id="10"><span style="color: burlywood;">Playing Games</span>
+      <input type="checkbox" name="reading" id="11"><span style="color: burlywood;">Reading</span>
+      <br>
+      <br>
+      <button style="color: dodgerblue;" onclick="submit()"><b> Submit </b></button>
+      <button style="color: dodgerblue;" onclick="setclrme()"><b> Clear </b></button>
     </form>
   </body>
 </html>
