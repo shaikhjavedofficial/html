@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-TicTacToe</title>
+    <script>
+      var player = 1;
+      function ticTac(id){
+          var cliTic = document.getElementById(id);
+          var playerTic = document.getElementById("p1");
+          if(player==1){
+          cliTic.style="color: red; font-size: 30px";
+          playerTic.style="color: red; font-size: 30px";
+          cliTic.innerHTML="Me";
+          player=2;
+          }
+          else {
+              cliTic.style="color: orange; font-size: 30px";
+              playerTic.style="color: orange; font-size: 30px";
+              cliTic.innerHTML="He";
+              player=1;
+          }
+          playerTic.innerHTML="player "+player
+      }
+    </script>
+  </head>
+  <body>
+    <h1><span id="p1" style="color: red">Player 1</span></h1>
+    <table border="2px">
+      <tr>
+        <td>
+          <span
+            id="11"
+            onclick="ticTac('11')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="12"
+            onclick="ticTac('12')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="13"
+            onclick="ticTac('13')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span
+            id="21"
+            onclick="ticTac('21')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="22"
+            onclick="ticTac('22')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="23"
+            onclick="ticTac('23')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span
+            id="31"
+            onclick="ticTac('31')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="32"
+            onclick="ticTac('32')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+        <td>
+          <span
+            id="33"
+            onclick="ticTac('33')"
+            style="color: green; font-size: 30px"
+            >D</span
+          >
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
