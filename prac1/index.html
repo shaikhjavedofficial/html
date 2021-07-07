@@ -4,9 +4,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function setTheme_1(){
+            var color_1 = document.getElementById("c1");
+            var color_2 = document.getElementById("c2");
+            color_1.style="color : red";
+            color_2.style = "color : blue"
+        }
+        function setTheme_2(){
+            var color_1 = document.getElementById("c1");
+            var color_2 = document.getElementById("c2");
+            color_1.style="color : blue";
+            color_2.style = "color : yellow"
+        }
+        function setTheme_3(){
+            var color_1 = document.getElementById("c1");
+            var color_2 = document.getElementById("c2");
+            color_1.style="color : black";
+            color_2.style = "color : green"
+        }
+    </script>
 </head>
 <body>
-    <label for="phone">Enter your phone number:</label>
-    <input type="mob" name="phone" pattern="[0-9]">
+    <h1>
+        <span id="c1" style="color: navy;"><b> Pickup </b></span><span id="c2" style="color: orangered;"><b> Biz </b></span>
+    </h1>
+    <button onmouseover="setTheme_1()" style="color: navy;" ><b>Theme 1</b> </button>
+    <button onmouseover="setTheme_2()" style="color: navy;" ><b>Theme 2</b> </button>
+    <button onmouseover="setTheme_3()" style="color: navy;" ><b>Theme 3</b> </button>
 </body>
 </html>
