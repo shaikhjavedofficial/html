@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game-TicTacToe</title>
     <script>
-      var player = "javed";
+      var player = 1;
       function ticTac(id){
           var cliTic = document.getElementById(id);
           var playerTic = document.getElementById("p1");
-          if(player=="javed"){
+          if(player==1){
           cliTic.style="color: red; font-size: 30px";
           playerTic.style="color: red; font-size: 30px";
-          cliTic.innerHTML="Me";
-          player="saba";
+          cliTic.innerHTML="X";
+          player=2;
           }
           else {
               cliTic.style="color: orange; font-size: 30px";
               playerTic.style="color: orange; font-size: 30px";
-              cliTic.innerHTML="He";
-              player="javed";
+              cliTic.innerHTML="o";
+              player=1;
           }
-          playerTic.innerHTML= player
+          playerTic.innerHTML="PLAYER" + player
       }
     </script>
   </head>
   <body>
-    <h1><span id="p1" style="color: red">javed</span></h1>
+    <h1><span id="p1" style="color: red">player</span></h1>
     <table border="2px">
       <tr>
         <td>
