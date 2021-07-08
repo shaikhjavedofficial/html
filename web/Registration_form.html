@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagle Corp.</title>
+    <script>
+        function submits(){
+            var named = document.getElementById("named");
+            var emaild = document.getElementById("emaild");
+            var passw = document.getElementById("passw");
+            var dob =document.getElementById("dob");
+            var files = document.getElementById("files");
+            sessionStorage.setItem("username", named.value);
+            sessionStorage.setItem("password", passw.value);
+            sessionStorage.setItem("Emails", emaild.value);
+            sessionStorage.setItem("dob", dob.value);
+            sessionStorage.setItem("files", files.value);
+            sessionStorage.setItem("favcolor", document.getElementById("colorpicker").value)
+            console.log(files.value)
+        }
+        function getStoreValue(){
+            var named = document.getElementById("named");
+            var emaild = document.getElementById("emaild");
+            var passw = document.getElementById("passw");
+            var dob =document.getElementById("dob");
+            var files = document.getElementById("files");
+            named.value = sessionStorage.getItem("username");
+            passw.value = sessionStorage.getItem("password");
+            emaild.value = sessionStorage.getItem("Emails");
+            dob.value = sessionStorage.getItem("dob");
+            files.value = sessionStorage.getItem("files");
+            document.getElementById("colorpicker").value = sessionStorage.getItem("favcolor");
+            document.getElementById("formstyle").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
+        }
+    </script>
 </head>
 <style>
     nav {
@@ -48,6 +78,9 @@
         background-image: url(./src/bac.jpg);
         background-size: 1500px;
     }
+    search {
+        float :right;
+    }
 </style>
 <body>
     <center><h1><b><i><span style="color: palegoldenrod;">Eagle Corp.<sup>TM</sup></span></i></b></h1></center>
@@ -57,34 +90,34 @@
         <a href="./Products.html">Products</a>
         <a href="./about_us.html">About Us</a>
         <a href="./contact_us.html">Contact Us</a>
-        <input class= "search" type="search">
+        <input class="search" type="search">
     </nav>
       <hr />
       <fieldset>
           <legend>Registration form</legend>
-      <form>
+      <form id ="formstyle">
         <label>Name :</label><br>
-        <input type="text" placeholder="Enter Your Full Name"  id="1"/>
+        <input type="text" placeholder="Enter Your Full Name"  id="named"/>
         <br>
         <br>
         <label>Email :</label><br>
-        <input type="email" placeholder="Enter Your Email" id="2" >
+        <input type="email" placeholder="Enter Your Email" id="emaild" >
         <br>
         <br>
         <label>Password :</label><br>
-        <input type="password" placeholder="Enter Your Password" id="3">
+        <input type="password" placeholder="Enter Your Password" id="passw">
         <br>
         <br>
         <label>DoB :</label><br>
-        <input type="date" placeholder="Enter Date Of Birth" id="4">
+        <input type="date" placeholder="Enter Date Of Birth" id="dob">
         <br>
         <br>
         <label>CV :</label><br>
-        <input type="file" placeholder="upload Your CV" id="5">
+        <input type="file" placeholder="upload Your CV" id="files">
         <br>
         <br>
         <label>Gender :</label>
-        <input type="radio" name="gender" value="male" id="6"> <span style="color: burlywood;">Male</span>
+        <input type="radio" name="gender" value="male" id=""> <span style="color: burlywood;">Male</span>
         <input type="radio" name="gender" id="7" value="female"> <span style="color: burlywood;">Female</span>
         <br>
         <br>
@@ -95,11 +128,17 @@
         <input type="checkbox" name="reading" id="11"><span style="color: burlywood;">Reading</span>
         <br>
         <br>
-        <button style="color: dodgerblue;" onclick="submit()"><b> Submit </b></button>
+        <label for="">color picker :</label>
+        <br>
+        <input type="color" name="" id="colorpicker">
+        <br>
+        <br>
+        <button style="color: dodgerblue;" onclick="submits()"><b> Submit </b></button>
         <button style="color: dodgerblue;" onclick="setclrme()"><b> Clear </b></button>
       </form>
     </fieldset>
 </body>
-</html>
-</body>
+<script>
+    getStoreValue();
+</script>
 </html>
