@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eagle Corp</title>
-</head>
-<style>
-
-</style>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function getStoreValue(){
+            document.getElementById("bstyle").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
+        }
+    </script>
 </head>
 <style>
     nav {
@@ -36,7 +29,6 @@
     h1 {
         background-color:navy;
         padding: 30px;
-
     }
     img{
         width: 600px;
@@ -49,16 +41,12 @@
     figure{
         display: inline-block;
     }
-    body{
-        background-image: url(./src/bac.jpg);
-        background-size: 1500px;
-    }
     marquee{
         background-color: purple;
         
     }
 </style>
-<body>
+<body id="bstyle">
     <center><h1><b><i><span style="color: palegoldenrod;">Eagle Corp.<sup>TM</sup></span></i></b></h1></center>
     <nav>
         <a href="./Registration_form.html">Registration</a>
@@ -70,6 +58,6 @@
     </nav>
     <marquee behavior="alternate" direction=""><b> New! Goto Registrtation Form </b></marquee>
 </body>
-</html>
-</body>
+<script>
+    getStoreValue();</script>
 </html>

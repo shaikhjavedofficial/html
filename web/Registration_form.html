@@ -33,6 +33,7 @@
             files.value = sessionStorage.getItem("files");
             document.getElementById("colorpicker").value = sessionStorage.getItem("favcolor");
             document.getElementById("formstyle").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
+            document.getElementById("bstyle").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
         }
     </script>
 </head>
@@ -74,15 +75,11 @@
     font-size:x-large;}
     label    {color: burlywood;}
     button    {color: dodgerblue;}
-    body{
-        background-image: url(./src/bac.jpg);
-        background-size: 1500px;
-    }
     search {
         float :right;
     }
 </style>
-<body>
+<body id="bstyle">
     <center><h1><b><i><span style="color: palegoldenrod;">Eagle Corp.<sup>TM</sup></span></i></b></h1></center>
     <nav>
         <a href="./Registration_form.html">Registration</a>
