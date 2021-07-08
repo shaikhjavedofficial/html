@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Corp.</title>
+</head>
+<style>
+    nav {
+        background-color: darkblue;
+        padding: 20px;
+    }
+    a {
+        background-color: rgb(251, 229, 104);
+        padding: 10px;
+        color:darkblue;
+        width: 10px;
+        font-size: large;
+    }
+    input {
+        float: right;
+    }
+    h1 {
+        background-color:navy;
+        padding: 30px;
+
+    }
+    img{
+        width: 600px;
+        height: 400px;
+    }
+    figcaption{
+        text-align: center;
+        background-color: orangered;
+    }
+    figure{
+        display: inline-block;
+    }
+    form {background-color:darkblue;
+    width: 400px;
+    padding: 100px;
+    margin: 10px;}
+    label    {color: burlywood;}
+    button    {color: dodgerblue;}
+    body{
+        background-image: url(./src/bac.jpg);
+        background-size: 1500px;
+    }
+</style>
+<body>
+    <center><h1><b><i><span style="color: palegoldenrod;">Eagle Corp.<sup>TM</sup></span></i></b></h1></center>
+    <nav>
+        <a href="./Registration_form.html">Registration</a>
+        <a href="./index.html">Home</a>
+        <a href="./Products.html">Products</a>
+        <a href="./about_us.html">About Us</a>
+        <a href="./contact_us.html">Contact Us</a>
+        <input type="search">
+    </nav>
+      <hr />
+      <fieldset>
+          <legend>Registration form</legend>
+      <form>
+        <label>Name :</label><br>
+        <input type="text" placeholder="Enter Your Full Name"  id="1"/>
+        <br>
+        <br>
+        <label>Email :</label><br>
+        <input type="email" placeholder="Enter Your Email" id="2" >
+        <br>
+        <br>
+        <label>Password :</label><br>
+        <input type="password" placeholder="Enter Your Password" id="3">
+        <br>
+        <br>
+        <label>DoB :</label><br>
+        <input type="date" placeholder="Enter Date Of Birth" id="4">
+        <br>
+        <br>
+        <label>CV :</label><br>
+        <input type="file" placeholder="upload Your CV" id="5">
+        <br>
+        <br>
+        <label>Gender :</label>
+        <input type="radio" name="gender" value="male" id="6"> <span style="color: burlywood;">Male</span>
+        <input type="radio" name="gender" id="7" value="female"> <span style="color: burlywood;">Female</span>
+        <br>
+        <br>
+        <label>Hobbies :</label>
+        <input type="checkbox" name="coding" id="8"><span style="color: burlywood;">Coding</span>
+        <input type="checkbox" name="riding" id="9"><span style="color: burlywood;">Riding</span>
+        <input type="checkbox" name="pg" id="10"><span style="color: burlywood;">Playing Games</span>
+        <input type="checkbox" name="reading" id="11"><span style="color: burlywood;">Reading</span>
+        <br>
+        <br>
+        <button style="color: dodgerblue;" onclick="submit()"><b> Submit </b></button>
+        <button style="color: dodgerblue;" onclick="setclrme()"><b> Clear </b></button>
+      </form>
+    </fieldset>
+</body>
+</html>
+</body>
+</html>
