@@ -36,6 +36,16 @@
             document.getElementById("bstyle").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
         }
     </script>
+    <script>
+        function saveData(){
+            var objColor = document.getElementById("colorpicker");
+            sessionStorage.setItem("favcolor",objColor.value);
+        }
+        function showData(){
+            var objColor = document.getElementById("colorpicker");
+            objColor.value = sessionStorage.getItem("favcolor");
+        }
+    </script>
 </head>
 <style>
     nav {
@@ -137,5 +147,6 @@
 </body>
 <script>
     getStoreValue();
+    showdata();
 </script>
 </html>
