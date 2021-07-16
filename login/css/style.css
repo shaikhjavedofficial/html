@@ -1,0 +1,46 @@
+body{
+    background-image: url(../src/pngegg\ \(2\).png);
+    background-size: cover;
+}
+.login{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    margin: 150px auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    border:groove blue;
+    color:rgb(0, 0, 0);
+    font-size:25px
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin: -85px;
+    padding-bottom: 160px;
+    z-index: 0;
+}
+input{
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    outline: none;
+    width: 300px;
+}
+::placeholder{
+    color:blue;
+}
+button{
+    border-radius: 50px;
+    background-color: navy;
+    color: oldlace;
+    padding: 8px;
+    width: 80px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}

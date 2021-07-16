@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+    background-image: url(./src/bac.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.h{
+    background-color:white;
+    background-image: url(./src/imga.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.j{
+    background-color: white;
+    border: 10px;
+    border-radius: 50px;
+    opacity: 0.8;
+}

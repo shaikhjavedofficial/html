@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+body{
+    
+}
+.nav{
+    background-color: rgb(226, 26, 26);
+    color: seashell;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+}
+nav{
+    padding: 20px;
+}
+a{
+    background-color: rgb(16, 163, 221);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+}
+a:hover{
+    box-shadow: 0 0 20px black;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdownlist{
+    position:absolute;
+    display: none;
+    padding: 5px;
+    width: 200px;
+}
+.dropdown:hover .dropdownlist{
+    display: block;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius:10px ;
+    margin: 10px;
+}
+.dropdownlist a{
+    display: block;
+}
