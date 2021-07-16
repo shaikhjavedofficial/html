@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+}
+.picture{
+    margin:20px 20px;
+    /* margin: auto; */
+    display: inline-block;
+}
+.picture img{
+    width: 250px;
+    border-radius: 20px;
+    height: 250px;
+}
+.picture:hover{
+    /* cursor: pointer; */
+    transform:translatex(20px)
+    
+}
+button{
+    width: 150px;
+    background:linear-gradient(to right, #fb5283,#ff3527);
+    border:0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transform: width 0.5s;
+}
+.butt:hover{
+    display: block;
+}
