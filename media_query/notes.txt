@@ -1,0 +1,26 @@
+display: flex;
+
+it is used to show content like rows and columns.
+
+properties:
+
+flex-direction: row/row-reverse/column;
+flex-wrap:wrap/nowrap;
+ 
+ 
+display:inline-flex;
+it adjust the page according to content
+
+
+meadia-quey:
+--for mobile: 500-800
+
+--for tab: 800-1200
+
+--laptop/x-larg: 1200-infinity
+
+--syntax: @media(min-width:500;){
+    content{
+
+    }
+}
